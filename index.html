@@ -13,6 +13,40 @@
     <title>Weather Dashboard</title>
   </head>
   <body>
+    <!--Banner-->
+    <div class="container-fluid text-center" id="banner">
+      <div class="row">
+        <div class="col">
+          <h1>Weather Dashboard</h1>
+        </div>
+      </div>
+    </div>
+    <!--Search Box-->
+    <div class="row">
+      <div class="col-4" id="searchBox">
+        <div class="input-group flex-nowrap">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="addon-wrapping"
+              ><img
+                id="searchIcon"
+                src="assets/imgs/searchicon.png"
+                alt="magnifying glass icon"
+            /></span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search for a City"
+            aria-label="Username"
+            aria-describedby="addon-wrapping"
+          />
+        </div>
+      </div>
+      <div class="col-7 detailsBox">
+        <div class="detailsResults"></div>
+      </div>
+    </div>
+
     <script src="assets/js/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
