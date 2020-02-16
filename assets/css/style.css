@@ -27,3 +27,32 @@
   border-color: lightgray;
   height: 600px;
 }
+
+.city {
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.temp {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.humidity {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.wind {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+#searchHistory{
+  margin-top: 10px;
+  font-size: 15px;
+}
