@@ -52,7 +52,59 @@
   font-size: 20px;
 }
 
+.uv {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
 #searchHistory{
   margin-top: 10px;
   font-size: 15px;
+}
+
+.card-body-0{
+  background-color: blue;
+  width: 150px;
+  height: 300px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  color: white;
+}
+.card-body-1{
+  background-color: blue;
+  width: 150px;
+  height: 300px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  color: white;
+}
+.card-body-2{
+  background-color: blue;
+  width: 150px;
+  height: 300px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  color: white;
+}
+.card-body-3{
+  background-color: blue;
+  width: 150px;
+  height: 300px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  color: white;
+}
+.card-body-4{
+  background-color: blue;
+  width: 150px;
+  height: 300px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  color: white;
 }
