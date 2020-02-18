@@ -48,18 +48,16 @@ $("#searchIcon").on("click", function(e) {
 
   $.ajax({
     url: searchFiveDay,
-    dataType: "json",
     method: "GET"
   }).then(function(r) {
     console.log(r);
-    var weather="";
-    var weatherList = r.list[0,1,2,3,4];
-    $.each(weatherList, function(weather){
-      $("<p>")
-      $("")
-    }
-     
+    
 
-    })
+    // for (var i = 0; i < 5; i++) {
+    //   var date = JSON.stringify(r.list[i].dt_txt);
+    //   var temp = JSON.stringify(r.list[i].main.temp);
+    //   var humidity = JSON.stringify(r.list[i].main.humidity);
+    //   $(".card-body-" + i).append(date, temp, humidity);
+    // }
   });
 });
