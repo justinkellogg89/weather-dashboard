@@ -11,6 +11,13 @@ $("#searchIcon").on("click", function(e) {
   var li = $("<li>").append(city);
   var ul = $("<ul>").append(li);
   $("#searchHistory").prepend(ul);
+  storeSearch();
+
+  function storeSearch() {
+    var searchHistory = [];
+    searchHistory.push("#searchHistory");
+    localStorage.setItem("search", city);
+  }
 
   $.ajax({
     url: searchCriteria,
@@ -51,13 +58,11 @@ $("#searchIcon").on("click", function(e) {
     method: "GET"
   }).then(function(r) {
     console.log(r);
-    
-
-    // for (var i = 0; i < 5; i++) {
-    //   var date = JSON.stringify(r.list[i].dt_txt);
-    //   var temp = JSON.stringify(r.list[i].main.temp);
-    //   var humidity = JSON.stringify(r.list[i].main.humidity);
-    //   $(".card-body-" + i).append(date, temp, humidity);
-    // }
+    for (var i = 0; i < 5; i++) {
+      var date = JSON.stringify(r.list[i].dt_txt);
+      var temp = JSON.stringify(r.list[i].main.temp);
+      var humidity = JSON.stringify(r.list[i].main.humidity);
+      $(".card-body-" + i).append(date, temp, humidity);
+    }
   });
 });
