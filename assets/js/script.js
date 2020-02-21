@@ -4,7 +4,7 @@ $("#searchIcon").on("click", function(e) {
   var city = $("#searchInput").val();
   console.log(city);
   var searchCriteria =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     city +
     "&appid=7413c3086c5dd2422988610e26a92cea&units=imperial";
 
@@ -34,7 +34,7 @@ $("#searchIcon").on("click", function(e) {
     var lat = r.coord.lat;
     var lon = r.coord.lon;
     var searchUV =
-      "http://api.openweathermap.org/data/2.5/uvi?appid=7413c3086c5dd2422988610e26a92cea&lat=" +
+      "https://api.openweathermap.org/data/2.5/uvi?appid=7413c3086c5dd2422988610e26a92cea&lat=" +
       lat +
       "&lon=" +
       lon;
